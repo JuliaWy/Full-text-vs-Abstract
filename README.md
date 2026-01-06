@@ -20,3 +20,15 @@ Relevant columns for the present analysis:
   - No label: Screening or prevention trials without known cancer  
 - __abstract_gpt-5-2025-08__:Labels that were assigned by GPT-5 based on the abstract
 - __full_text_gpt-5-2025-08__:Labels that were assigned by GPT-5 based on the full text
+
+# Structure
+[1_dataset/](1_dataset/) - Randomly drawing 200 trials from the combined train and test dataframes  
+
+[2_text_extraction/](2_text_extraction/) - Extracting the text from the full-text publication PDFs of the 200 trials using PyMuPDF  
+
+[3_integration_of_GPT/](3_integration_of_GPT/) - Classifying trials (local vs. metastatic) via GPT-5 API  
+
+[4_analysis/](4_analysis/) - Statistical analysis: heatmaps, calculations, McNemar P-values  
+
+[5_plots/](5_plots/) - Distribution of trials and heatmaps of the results  
+
